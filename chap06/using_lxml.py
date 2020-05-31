@@ -15,8 +15,14 @@ movie.text = "Chinatown"
 movie.set("year", "1974")
 
 print(etree.tostring(movies, pretty_print=True)) 
+print(etree.tostring(movies, pretty_print=True).decode()) 
 
 
 """ Output :
 b'<films>\n  <movie year="1939">The Wizard of Oz</movie>\n  <movie year="1964">Mary Poppins</movie>\n  <movie year="1974">Chinatown</movie>\n</films>\n'
+<films>
+  <movie year="1939">The Wizard of Oz</movie>
+  <movie year="1964">Mary Poppins</movie>
+  <movie year="1974">Chinatown</movie>
+</films>
 """
